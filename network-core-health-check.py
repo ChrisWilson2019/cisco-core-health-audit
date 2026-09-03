@@ -29,8 +29,8 @@ EMAIL_FROM = os.getenv('MAIL_FROM')
 EMAIL_TO = os.getenv('MAIL_TO')
 
 # Switch inventory loaded dynamically or defaulted to target IPs
-TARGET_SWITCH_1 = os.getenv('SWITCH_1_IP', '10.251.255.250')
-TARGET_SWITCH_2 = os.getenv('SWITCH_2_IP', '10.251.255.251')
+TARGET_SWITCH_1 = os.getenv('SWITCH_1_IP', 'device_ip')
+TARGET_SWITCH_2 = os.getenv('SWITCH_2_IP', 'device_ip')
 
 SWITCHES = [
     {"device_type": "cisco_xe", "host": TARGET_SWITCH_1},
